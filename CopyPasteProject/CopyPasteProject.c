@@ -1,27 +1,34 @@
 ﻿#include <stdio.h>
 
-#define rep(i,n) for(int i=0;i<n;i++)
-#define MinExerciseNumber 8//演習の番号
-#define MaxExerciseNumber 11
+#define CNUM 128
 
 //
 
 int main(void)
 {
-	int c;//continue
+	char s[CNUM];
 
-	do {
-		int num;
-		printf("試したい演習問題の番号を入力してください。(%d～%d) : ", MinExerciseNumber, MaxExerciseNumber);
-		scanf_s("%d", &num);
+	char c;
 
-		switch (num) {
-		case 1: break;
-		default: printf("%d～%d以外の値が入力されました。\n", MinExerciseNumber, MaxExerciseNumber);
-		}
-		printf("もう一度試しますか?(No: 0, Yes: 1) : ");
-		scanf_s("%d", &c);
-	} while (c == 1);
+	printf("%d文字以内の文字列と文字を入力してください。\n", CNUM);
+
+	printf("s : "); scanf_s("%s", s, CNUM);
+
+	char z = 's';
+	
+	int ch;
+	while ((ch = getchar()) != '\n' && ch != EOF) {
+		printf("q\n");
+		continue;
+	}
+
+	//int ch = getchar();
+
+	printf("c : "); scanf_s("%c", &c, 1);
+
+	printf("\n%s\n", s);
+
+	printf("%c\n", c);
 
 	return 0;
 }

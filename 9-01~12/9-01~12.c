@@ -7,6 +7,11 @@
 #include "9-05.h"
 #include "9-06.h"
 #include "9-07.h"
+#include "9-08.h"
+#include "9-09.h"
+#include "9-10.h"
+#include "9-11.h"
+#include "9-12.h"
 
 #define MinExerciseNumber 1//演習の番号
 #define MaxExerciseNumber 12
@@ -28,6 +33,11 @@ int main(void)
 		case 5:call0905(); break;
 		case 6:call0906(); break;
 		case 7:call0907(); break;
+		case 8:call0908(); break;
+		case 9:call0909(); break;
+		case 10:call0910(); break;
+		case 11:call0911(); break;
+		case 12:call0912(); break;
 
 		default: printf("%d～%d以外の値が入力されました。\n", MinExerciseNumber, MaxExerciseNumber);
 		}

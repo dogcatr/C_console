@@ -49,7 +49,7 @@ void call0907() {
 
 	printf("s : "); scanf_s("%s", s, CNUM);
 
-	printf("n : "); scanf_s("%d", &n, 1);
+	printf("n : "); scanf_s("%d", &n);
 
 	printf("%s‚ð%d‰ñŒJ‚è•Ô‚·‚Æ,\n", s, n);
 
